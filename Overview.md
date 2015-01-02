@@ -1,5 +1,32 @@
 # Python's Greatest Hits
 
+```
+import this
+
+Output:
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+```
+
 Topics:
 Unordered list of topic titles
 
@@ -26,11 +53,28 @@ Importing from libraries:
 # Import the 'sys' library from The Python Standard library
 import sys
 
-# If we're running Python 3.X+, we're done. If not...
-from __future__ import print_function
+'''
+If we're running Python 3.X+, we don't need to fo the following done. If
+not, we will need to import the "print_function" from the __future__
+built-in library.
+
+2.7.x:
+>>> import sys
+>>> print("Printing to standard error (stderr)", file=sys.stderr)
+  File "<stdin>", line 1
+    print("Printing to standard error (stderr)", file=sys.stderr)
+                                                     ^
+SyntaxError: invalid syntax
+
+3.x:
+>>> import sys
+>>> print("Printing to standard error (stderr)", file=sys.stderr)
+Printing to standard error (stderr)
+'''
+ from __future__ import print_function
 
 # Example of using the imported libraries
-print("Printing to standard out (stdout)", file=sys.stderr)
+print("Printing to standard error (stderr)", file=sys.stderr)
 ```
 
 Assigning variables:
@@ -113,8 +157,14 @@ Iterators
 
 
 ## Loops
+For loop
+While loop
 
 ## Files
+```
+with open(sys.argv[1]) as input_file
+
+```
 
 ## Classes and Functions
 ```
@@ -125,29 +175,60 @@ the class delcaration that immediately precedes it.
 """
 ```
 
+args vs kwargs
+
+## Pickling (Serializing)
+Pickle - Convert to byte stream
+Unpickle - Inverse of pickle
+cPickle - 1000x faster than pickle
+
+
 ## Packaging
     __init__.py for imports and enforcing order for universal packages
-        memory intensive for a large number of imports across all modules
+        memory intensive for a large     number of imports across all modules
 
-## API
+## JSON and XML and YAML
+
+## Parsers
+
+    JSON
+    XML
+    YAML
+    BeautifulSoup - HTML
+
 
 ## Exceptions
-Try-Catch-Finally
+Try-Catch-Finally:
+```
+def ourFunction():
+    try:
+        raise KeyboardInterrupt
+    catch Exception as e:
+        print(e)
+        raise
+    finally: 
+        print("You're in the 'finally' block.")
 Exception
     raise
 
-## Debugging
+## Testing
+
+Unit Testing:
+```
+pyunit
+```
 
 Assertions:
 ```
-from types import StringType
-
 class MyClass(object):
     '''
     This is a test
+    '''
+    def addEmUp(self, a, b):
+        x = a+ b
+        assert x - b == a 
+        return x
 ```
 
-## Awesomeness
-```
-import this
-```
+## Debugging
+The python debugger (pdb)
