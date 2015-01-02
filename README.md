@@ -105,18 +105,46 @@ string and such.This is a string and such.This is a string and such.'
 >>> integer = 0123456789
 >>> float = 3.14159f
 ```
-Slicing a string:
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
 
-Splitting:
+Slicing a string:
 ```
+>>> # Here we take the first index of a string and we slice it away from the rest
+>>> # of the string
+>>> alphabet[0]
+'A'
 
+>>> # We can do the same thing for the right side of the string by using
+>>> # negative integers (i.e.: -3, -53, etc.)
+>>> alphabet[-1]
+'Z'
+
+>>> 
+#>>> alphabet[1:]
+'BCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+>>> alphabet[:-1]
+'ABCDEFGHIJKLMNOPQRSTUVWXY'
 ```
 
 Case and directionality:
 ```
+>>> # The case of our string can be modified easily using built-ins
+>>> our_title = "an example of a title"
+>>> our_title.title()
+'An Example Of A Title'
 
+>>> alphabet.capitalize()
+'Abcdefghijklmnopqrstuvwxyz'
+
+>>> len(alphabet)
+26
+
+>>> # Extended slicing allows us to reverse the directionality of the string
+>>> # our_string[begin:end:step]
+>>> alphabet[::-1]
+'ZYXWVUTSRQPONMLKJIHGFEDCBA'
 ```
 
 Formatting:
@@ -133,7 +161,7 @@ True
 ```
 
 
-Find, Replace, and Count
+Find, Replace, and Len
 Formatting
 
 ## Comparisons
