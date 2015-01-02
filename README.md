@@ -78,25 +78,25 @@ print("Printing to standard error (stderr)", file=sys.stderr)
 
 Assigning variables:
 ```
-'''
-Python is dynamically-typed language. Meaning, that a variable type doesn't
-need to be declared ahead of time or assigned specifically unless otherwise
-required through via casting.
-'''
+>>> '''
+... Python is dynamically-typed language. Meaning, that a variable type doesn't
+... need to be declared ahead of time or assigned specifically unless otherwise
+... required through via casting.
+>>> '''
 
-# Assign an integer to a var
-our_number = 1
+>>> # Assign an integer to a var
+>>> our_number = 1
 
-# Assign a string to a var
-our_string = "This is a string and such."
+>>> # Assign a string to a var
+>>> our_string = "This is a string and such."
 
-# Perform math on "our_number"
-our_number * 5
-# Output: 5
+>>> # Perform math on "our_number"
+>>> our_number * 5
+5
 
-# Perform math on "our_string"
-our_string * 5
-# Output: 'This is a string and such.This is a string and such.This is a
+>>> # Perform math on "our_string"
+>>> our_string * 5
+'This is a string and such.This is a string and such.This is a
 string and such.This is a string and such.This is a string and such.'
 
 ```
