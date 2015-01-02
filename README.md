@@ -1,4 +1,4 @@
-# Python's Greatest Hits
+# FDC Python Training
 
 ```
 >>> import this
