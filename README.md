@@ -38,19 +38,19 @@ Comments:
 ... Multi-line comment
 ... Multi-line comment
 ... Multi-line comment
->>> '''
+... '''
 ```
 
 Print to standard out (stdout):
 ```
 # Print a line that outputs, "Hello, World."
-print("Hello, World.")
+>>> print("Hello, World.")
 ```
 
 Importing from libraries:
 ```
 # Import the 'sys' library from The Python Standard library
-import sys
+>>> import sys
 
 '''
 If we're running Python 3.X+, we don't need to fo the following done. If
@@ -58,22 +58,20 @@ not, we will need to import the "print_function" from the __future__
 built-in library.
 
 2.7.x:
->>> import sys
->>> print("Printing to standard error (stderr)", file=sys.stderr)
+print("Printing to standard error (stderr)", file=sys.stderr)
   File "<stdin>", line 1
     print("Printing to standard error (stderr)", file=sys.stderr)
                                                      ^
 SyntaxError: invalid syntax
 
 3.x:
->>> import sys
->>> print("Printing to standard error (stderr)", file=sys.stderr)
+print("Printing to standard error (stderr)", file=sys.stderr)
 Printing to standard error (stderr)
 '''
- from __future__ import print_function
+>>> import sysfrom __future__ import print_function
 
 # Example of using the imported libraries
-print("Printing to standard error (stderr)", file=sys.stderr)
+>>> import sysprint("Printing to standard error (stderr)", file=sys.stderr)
 ```
 
 Assigning variables:
@@ -82,7 +80,7 @@ Assigning variables:
 ... Python is dynamically-typed language. Meaning, that a variable type doesn't
 ... need to be declared ahead of time or assigned specifically unless otherwise
 ... required through via casting.
->>> '''
+... '''
 
 >>> # Assign an integer to a var
 >>> our_number = 1
@@ -103,9 +101,9 @@ string and such.This is a string and such.This is a string and such.'
 
 ## Strings and Numbers
 ```
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-integer = 0123456789
-float = 3.14159f
+>>> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+>>> integer = 0123456789
+>>> float = 3.14159f
 ```
 Slicing a string:
 Strings, in python, are immutable. To interact with strings, we can use a
@@ -113,6 +111,7 @@ variety of methods:
 
 Splitting:
 ```
+
 ```
 
 Case and directionality:
@@ -122,6 +121,7 @@ Case and directionality:
 
 Formatting:
 ```
+
 ```
 
 Furthermore, we can search through a string to find information we need:
@@ -129,7 +129,6 @@ Furthermore, we can search through a string to find information we need:
 Find:
 ```
 >>> 'Test' in 'Testing'
-Output:
 True
 ```
 
@@ -145,13 +144,21 @@ Boolean Operators
     not
 
 Comparison Operators
+
     <
+
     <=
+
     >
+
     >=
+
     ==
+
     != (<> (Deprecated))
+
     is
+
     is not
 
 ## Control Flow
