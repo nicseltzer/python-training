@@ -138,12 +138,12 @@ Formatting
 
 ## Comparisons
 
-Boolean Operators
+### Boolean Operators
     or
     and
     not
 
-Comparison Operators:
+### Comparison Operators
     <
     <=
     >
