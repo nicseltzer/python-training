@@ -143,22 +143,14 @@ Boolean Operators
     and
     not
 
-Comparison Operators
-
+Comparison Operators:
     <
-
     <=
-
     >
-
     >=
-
     ==
-
     != (<> (Deprecated))
-
     is
-
     is not
 
 ## Control Flow
@@ -207,7 +199,7 @@ While loop
 >>> """
 ... This is an example of a doc string. This commonly contains information about
 ... the class delcaration that immediately precedes it.
->>> """
+... """
 ```
 
 args vs kwargs
