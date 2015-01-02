@@ -148,10 +148,12 @@ Case and directionality:
 ```
 
 Formatting:
+The simplest example of formatting is string substitution:
 ```
->>> # The simplest example of formatting is string substitution:
+# Assign values that we'll be subtitutin below
 >>> first_value = 70
 >>> second_value = 1000
+# PEP 8 recommends that we break any line that is over 79 characters in length
 >>> "This is the {0}th test out of {1} tests.".format(first_value,\
 ... second_value)
 'This is the 70th test out of 1000 tests.'
