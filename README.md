@@ -1,5 +1,5 @@
 # Python's Greatest Hits
-===============
+
 ```
 import this
 
