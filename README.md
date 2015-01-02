@@ -210,6 +210,7 @@ def ourFunction():
         print("You're in the 'finally' block.")
 Exception
     raise
+```
 
 ## Testing
 
