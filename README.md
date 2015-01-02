@@ -149,7 +149,12 @@ Case and directionality:
 
 Formatting:
 ```
-
+>>> # The simplest example of formatting is string substitution:
+>>> first_value = 70
+>>> second_value = 1000
+>>> "This is the {0}th test out of {1} tests.".format(first_value,\
+... second_value)
+'This is the 70th test out of 1000 tests.'
 ```
 
 Furthermore, we can search through a string to find information we need:
