@@ -1,9 +1,8 @@
 # Python's Greatest Hits
 
 ```
-import this
+>>> import this
 
-Output:
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -33,13 +32,13 @@ Unordered list of topic titles
 ## Basics
 Comments:
 ```
-# Single line comment
+>>> # Single line comment
 
-'''
-Multi-line comment
-Multi-line comment
-Multi-line comment
-'''
+>>> '''
+... Multi-line comment
+... Multi-line comment
+... Multi-line comment
+>>> '''
 ```
 
 Print to standard out (stdout):
@@ -102,9 +101,38 @@ string and such.This is a string and such.This is a string and such.'
 
 ```
 
-## Strings and Integers
+## Strings and Numbers
+```
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+integer = 0123456789
+float = 3.14159f
+```
+Slicing a string:
+Strings, in python, are immutable. To interact with strings, we can use a
+variety of methods:
+
+Splitting:
 ```
 ```
+
+Case and directionality:
+```
+
+```
+
+Formatting:
+```
+```
+
+Furthermore, we can search through a string to find information we need:
+
+Find:
+```
+>>> 'Test' in 'Testing'
+Output:
+True
+```
+
 
 Find, Replace, and Count
 Formatting
@@ -162,17 +190,17 @@ While loop
 
 ## Files
 ```
-with open(sys.argv[1]) as input_file
+>>> with open(sys.argv[1]) as input_file
 
 ```
 
 ## Classes and Functions
 ```
-# Docstrings
-"""
-This is an example of a doc string. This commonly contains information about
-the class delcaration that immediately precedes it.
-"""
+>>> # Docstrings
+>>> """
+... This is an example of a doc string. This commonly contains information about
+... the class delcaration that immediately precedes it.
+>>> """
 ```
 
 args vs kwargs
@@ -200,17 +228,19 @@ cPickle - 1000x faster than pickle
 ## Exceptions
 Try-Catch-Finally:
 ```
-def ourFunction():
-    try:
-        raise KeyboardInterrupt
-    catch Exception as e:
-        print(e)
-        raise
-    finally: 
-        print("You're in the 'finally' block.")
+>>> def ourFunction():
+...     try:
+...         raise KeyboardInterrupt
+...     catch Exception as e:
+...         print(e)
+...         raise
+...     finally: 
+...         print("You're in the 'finally' block.")
+```
+
+
 Exception
     raise
-```
 
 ## Testing
 
@@ -221,15 +251,18 @@ pyunit
 
 Assertions:
 ```
-class MyClass(object):
-    '''
-    This is a test
-    '''
-    def addEmUp(self, a, b):
-        x = a+ b
-        assert x - b == a 
-        return x
+>>> class MyClass(object):
+...     '''
+...     This is a test
+...     '''
+...     def addEmUp(self, a, b):
+...         x = a+ b
+...         assert x - b == a 
+...         return x
 ```
+
+Assertions will produce an error assuming that the python application isn't
+run with the -O (optimization) argument.
 
 ## Debugging
 The python debugger (pdb)
