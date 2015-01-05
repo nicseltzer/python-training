@@ -233,8 +233,13 @@ While loop
 >>> # Docstrings
 >>> """
 ... This is an example of a doc string. This commonly contains information about
-... the class delcaration that immediately precedes it.
+... the class, function or top-level delcaration
 ... """
+
+    def docStringExample(x):
+    """ Takes an argument of 'x' and returns 'x' to the power of 'x'."""
+    return x ** x
+
 ```
 
 args vs kwargs
@@ -368,7 +373,7 @@ should be 2 when we hard-code it to be
 
 
 if __name__ == '__main__':
-    pdb.set_trace()
+    pdb.set_trace() # breakpoint
     setMyNumber()
 
 ```
