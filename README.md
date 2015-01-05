@@ -368,7 +368,7 @@ should be 2 when we hard-code it to be
 
 
 if __name__ == '__main__':
-#    pdb.set_trace()
+    pdb.set_trace()
     setMyNumber()
 
 ```
