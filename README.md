@@ -1,6 +1,6 @@
 # FDC Python Training
 
-```python
+```
 >>> import this
 
 The Zen of Python, by Tim Peters
@@ -75,7 +75,7 @@ Printing to standard error (stderr)
 ```
 
 Assigning variables:
-```
+```python
 >>> '''
 ... Python is dynamically-typed language. Meaning, that a variable type doesn't
 ... need to be declared ahead of time or assigned specifically unless otherwise
@@ -100,16 +100,16 @@ string and such.This is a string and such.This is a string and such.'
 ```
 
 ## Strings and Numbers
-```
+```python
 >>> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 >>> integer = 0123456789
 >>> float = 3.14159f
-```
+```python
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
 
 Slicing a string:
-```
+```python
 >>> # Here we take the first index of a string and we slice it away from the rest
 >>> # of the string
 >>> alphabet[0]
@@ -129,7 +129,7 @@ Slicing a string:
 ```
 
 Case and directionality:
-```
+```python
 >>> # The case of our string can be modified easily using built-ins
 >>> our_title = "an example of a title"
 >>> our_title.title()
