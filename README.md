@@ -149,7 +149,7 @@ Case and directionality:
 
 Formatting:
 The simplest example of formatting is string substitution:
-```
+```python
 # Assign values that we'll be subtitutin below
 >>> first_value = 70
 >>> second_value = 1000
@@ -162,7 +162,7 @@ The simplest example of formatting is string substitution:
 Furthermore, we can search through a string to find information we need:
 
 Find:
-```
+```python
 >>> 'Test' in 'Testing'
 True
 ```
@@ -223,7 +223,7 @@ For loop
 While loop
 
 ## Files
-```
+```python
 >>> with open(sys.argv[1]) as input_file
 
 ```
@@ -241,7 +241,7 @@ args vs kwargs
 
 ## Pickling (Serializing)
 Pickle - Convert to byte stream
-```
+```python
 #!/usr/bin/python
 import pickle
 
@@ -264,7 +264,7 @@ file_buff.close()
 
 ```
 Unpickle - Inverse of pickle
-```
+```python
 #!/usr/bin/python
 
 import pickle
@@ -300,7 +300,7 @@ cPickle - 1000x faster than pickle
 
 ## Exceptions
 Try-Catch-Finally:
-```
+```python
 >>> def ourFunction():
 ...     try:
 ...         raise KeyboardInterrupt
@@ -309,6 +309,7 @@ Try-Catch-Finally:
 ...         raise
 ...     finally: 
 ...         print("You're in the 'finally' block.")
+
 ```
 
 
@@ -319,7 +320,7 @@ Exception
 
 Unit Testing:
 pyunit
-```
+```python
 
 ```
 
@@ -342,7 +343,7 @@ run with the -O (optimization) argument.
 The python debugger (pdb)
 
 Create the following python script:
-```
+```python
 #!/usr/bin/python
 
 import pdb
