@@ -229,7 +229,7 @@ While loop
 ```
 
 ## Classes and Functions
-```
+```python
 >>> # Docstrings
 >>> """
 ... This is an example of a doc string. This commonly contains information about
