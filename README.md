@@ -334,12 +334,12 @@ if __name__ == '__main__':
 
 Using the script, we can illustrate the basics of Python's debugger (pdb).
 
-(n)ext - Next goes to the next function call, executing function calls at
+ (n)ext - Next goes to the next function call, executing function calls at
 normal speed
-(s)tep - Steps in to the next function an debugs accordingly
-(j)ump - Accepts, one arg. Jumps to the line number provided
-(c)ontinue - Runs the app / script until a breakpoint is encountered
-(l)ist - Shows the current running line in context of the source code
-(a)rgs - Lists the args currently being passed
-(run) - Restart the app / script from the beginning with any args as args
-(q)uit - Quit
+ (s)tep - Steps in to the next function an debugs accordingly
+ (j)ump - Accepts, one arg. Jumps to the line number provided
+ (c)ontinue - Runs the app / script until a breakpoint is encountered
+ (l)ist - Shows the current running line in context of the source code
+ (a)rgs - Lists the args currently being passed
+ (run) - Restart the app / script from the beginning with any args as args
+ (q)uit - Quit
