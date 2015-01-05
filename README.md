@@ -300,3 +300,46 @@ run with the -O (optimization) argument.
 
 ## Debugging
 The python debugger (pdb)
+
+Create the following python script:
+```
+#!/usr/bin/python
+
+import pdb
+
+'''
+Example script to show the the basal functionality of the python debugger
+(pdb)
+'''
+
+
+def setMyNumber():
+    my_number = 1
+    print("Setting 'my_number' to {0}...").format(my_number)
+
+    print("""
+Now we're trying to throw an AssertionError. This won't show when
+run in optimized mode (-O). We do this by asserting that my_number
+should be 2 when we hard-code it to be
+""")
+
+    assert my_number == 2
+
+
+if __name__ == '__main__':
+#    pdb.set_trace()
+    setMyNumber()
+
+```
+
+Using the script, we can illustrate the basics of Python's debugger (pdb).
+
+(n)ext - Next goes to the next function call, executing function calls at
+normal speed
+(s)tep - Steps in to the next function an debugs accordingly
+(j)ump - Accepts, one arg. Jumps to the line number provided
+(c)ontinue - Runs the app / script until a breakpoint is encountered
+(l)ist - Shows the current running line in context of the source code
+(a)rgs - Lists the args currently being passed
+(run) - Restart the app / script from the beginning with any args as args
+(q)uit - Quit
