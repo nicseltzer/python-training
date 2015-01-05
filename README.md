@@ -1,6 +1,6 @@
 # FDC Python Training
 
-```
+```python
 >>> import this
 
 The Zen of Python, by Tim Peters
@@ -31,7 +31,7 @@ Unordered list of topic titles
 
 ## Basics
 Comments:
-```
+```python
 >>> # Single line comment
 
 >>> '''
@@ -42,13 +42,13 @@ Comments:
 ```
 
 Print to standard out (stdout):
-```
+```python
 # Print a line that outputs, "Hello, World."
 >>> print("Hello, World.")
 ```
 
 Importing from libraries:
-```
+```python
 # Import the 'sys' library from The Python Standard library
 >>> import sys
 
@@ -241,7 +241,46 @@ args vs kwargs
 
 ## Pickling (Serializing)
 Pickle - Convert to byte stream
+```
+#!/usr/bin/python
+import pickle
+
+data = {1: 'first data element',
+           2: 'second data element',
+           3: 'final data element'
+        }
+
+data2 = [x ** x for x in range(0, len(data))]
+
+file_buff = open('barrel.pkl', 'wb')
+
+# Pickle dictionary using index 0
+pickle.dump(data, file_buff)
+
+# Pickle the list using the highest index available.
+pickle.dump(data2, file_buff, -1)
+
+file_buff.close()
+
+```
 Unpickle - Inverse of pickle
+```
+#!/usr/bin/python
+
+import pickle
+
+file_buff = open('barrel.pkl', 'rb')
+
+data = pickle.load(file_buff)
+print(data)
+
+data = pickle.load(file_buff)
+print(data)
+
+file_buff.close()
+
+```
+
 cPickle - 1000x faster than pickle
 
 
@@ -285,7 +324,7 @@ pyunit
 ```
 
 Assertions:
-```
+```python
 >>> class MyClass(object):
 ...     '''
 ...     This is a test
