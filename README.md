@@ -224,22 +224,28 @@ Formatting
     is not
 
 ```python
-our_int = 2
-
-if our_int > 1:
-    print("'our_int' is greater than 1.")
-
-if our_int >=  2:
-    print("'our_int' is greater than or equal to 2.")
-
-if our_int < 3:
-    print("'our_int' is less than 3.")
-
-if our_int <= 2:
-    print("'our_int' is less than or equal to 2.")
-
-if our_int == 2:
-    print("'our_int' is equal to 2.")
+>>> our_int = 2
+>>>
+>>> if our_int > 1:
+...     print("'our_int' is greater than 1.")
+...
+'our_int' is greater than 1.
+>>> if our_int >=  2:
+...     print("'our_int' is greater than or equal to 2.")
+...
+'our_int' is greater than or equal to 2.
+>>> if our_int < 3:
+...     print("'our_int' is less than 3.")
+...
+'our_int' is less than 3.
+>>> if our_int <= 2:
+...     print("'our_int' is less than or equal to 2.")
+...
+'our_int' is less than or equal to 2.
+>>> if our_int == 2:
+...     print("'our_int' is equal to 2.")
+...
+'our_int' is equal to 2.
 
 ```
 
@@ -249,13 +255,16 @@ if our_int == 2:
     not
 
 ```python
-our_int = 100
-
-if our_int > 99 and our_int < 101:
-    print("This is an example of the and operator.")
-
-if 99 < our_int < 101:
-    print("This is an abbreviation of the above operation.")
+>>> our_int = 100
+>>>
+>>> if our_int > 99 and our_int < 101:
+...     print("This is an example of the and operator.")
+...
+This is an example of the and operator.
+>>> if 99 < our_int < 101:
+...     print("This is an abbreviation of the above operation.")
+...
+This is an abbreviation of the above operation.
 
 ```
 
@@ -264,25 +273,29 @@ Additional built-ins:
     all
 
 ```python
-our_string = "This is a test 6er-ino!"
-our_rules = ["ino" in our_string,
-                    our_string == "This is a test 6er-ino!",
-                    len(our_string) > 100]
-
-print(our_rules)
-
-if any(our_rules):
-    print("Some of the rules matched.")
-
-our_rules = ["ino" in our_string,
-                    our_string == "This is a test 6er-ino!",
-                    len(our_string) > 10]
-
-print(our_rules)
-
-if all(our_rules):
-    print("All of the rules matched.")
-
+>>> our_string = "This is a test 6er-ino!"
+>>> our_rules = ["ino" in our_string,
+...                     our_string == "This is a test 6er-ino!",
+...                     len(our_string) > 100]
+>>>
+>>> print(our_rules)
+[True, True, False]
+>>>
+>>> if any(our_rules):
+...     print("Some of the rules matched.")
+...
+Some of the rules matched.
+>>> our_rules = ["ino" in our_string,
+...                     our_string == "This is a test 6er-ino!",
+...                     len(our_string) > 10]
+>>>
+>>> print(our_rules)
+[True, True, True]
+>>>
+>>> if all(our_rules):
+...     print("All of the rules matched.")
+...
+All of the rules matched.
 ```
 
 ## Control Flow
