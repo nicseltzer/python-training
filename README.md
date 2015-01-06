@@ -223,7 +223,7 @@ Formatting
     is
     is not
 
-```
+```python
 our_int = 2
 
 if our_int > 1:
@@ -248,14 +248,14 @@ if our_int == 2:
     and
     not
 
-```
+```python
 our_int = 100
 
 if our_int > 99 and our_int < 101:
     print("This is an example of the and operator.")
 
 if 99 < our_int < 101:
-    print("This is a shorter form of the above operation.")
+    print("This is an abbreviation of the above operation.")
 
 ```
 
@@ -263,7 +263,7 @@ Additional built-ins:
     any
     all
 
-```
+```python
 our_string = "This is a test 6er-ino!"
 our_rules = ["ino" in our_string,
                     our_string == "This is a test 6er-ino!",
