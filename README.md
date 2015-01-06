@@ -160,14 +160,6 @@ Case and directionality:
 >>> alphabet[::-1]
 'ZYXWVUTSRQPONMLKJIHGFEDCBA'
 
-def convert_sentence(sentence):
-    list_of_words = sentence.split(' ')
-   
-     for word in list_of_words:
-        new_sentence = new_sentence + convert_word(word)    # ...like this
-        new_sentence = new_sentence + " "   # but don't forget the space!
-    return new_sentence
-
 ```
 
 Formatting:
@@ -377,8 +369,8 @@ Pickle - Convert to byte stream
 import pickle
 
 data = {1: 'first data element',
-           2: 'second data element',
-           3: 'final data element'
+        2: 'second data element',
+        3: 'final data element'
         }
 
 data2 = [x ** x for x in range(0, len(data))]
@@ -416,10 +408,12 @@ cPickle - 1000x faster than pickle
 
 
 ## Packaging
-    __init__.py for imports and enforcing order for universal packages
-        memory intensive for a large     number of imports across all modules
+__init__.py for imports and enforcing order for universal packages
+memory intensive for a large number of imports across all modules
 
 ## JSON and XML and YAML
+
+
 
 ## Parsers
 
