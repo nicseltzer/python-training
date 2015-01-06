@@ -191,7 +191,7 @@ True
 ```
 
 Split and join:
-```
+```python
 >>> our_string = "This is an immutable string."
 >>> print our_string
 This is an immutable string.
