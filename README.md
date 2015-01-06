@@ -193,15 +193,15 @@ True
 Split and join:
 ```python
 >>> our_string = "This is an immutable string."
->>> print our_string
+>>> print(our_string)
 This is an immutable string.
 
 >>> our_string = our_string.split()
->>> print our_string
+>>> print(our_string)
 ['This', 'is', 'an', 'immutable', 'string.']
 
 >>> our_string =  ' '.join(our_string)
->>> print our_string
+>>> print(our_string)
 This is an immutable string.
 
 ```
