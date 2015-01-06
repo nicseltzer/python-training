@@ -275,8 +275,8 @@ Additional built-ins:
 ```python
 >>> our_string = "This is a test 6er-ino!"
 >>> our_rules = ["ino" in our_string,
-...                     our_string == "This is a test 6er-ino!",
-...                     len(our_string) > 100]
+...              our_string == "This is a test 6er-ino!",
+...              len(our_string) > 100]
 >>>
 >>> print(our_rules)
 [True, True, False]
@@ -286,8 +286,8 @@ Additional built-ins:
 ...
 Some of the rules matched.
 >>> our_rules = ["ino" in our_string,
-...                     our_string == "This is a test 6er-ino!",
-...                     len(our_string) > 10]
+...              our_string == "This is a test 6er-ino!",
+...              len(our_string) > 10]
 >>>
 >>> print(our_rules)
 [True, True, True]
