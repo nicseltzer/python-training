@@ -1,4 +1,4 @@
-# FDC Python Training
+# Python Training
 
 ```
 >>> import this
