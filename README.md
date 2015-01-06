@@ -74,6 +74,15 @@ Printing to standard error (stderr)
 >>> import sysprint("Printing to standard error (stderr)", file=sys.stderr)
 ```
 
+It is bad form to import _all_ the  functions in a library. This leads to issues with determining the orignating library down the road. For example, below we import all of the functions from sysv and then 
+```python
+
+from sys import *
+
+input = argv[1]
+
+```
+
 Assigning variables:
 ```python
 >>> '''
@@ -99,6 +108,11 @@ string and such.This is a string and such.This is a string and such.'
 
 ```
 
+Constants:
+
+Constants in Python are stylisticly defined as being ALL UPPERCASE with 
+underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
+
 ## Strings and Numbers
 ```python
 >>> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -121,7 +135,7 @@ Slicing a string:
 'Z'
 
 >>> 
-#>>> alphabet[1:]
+>>> alphabet[1:]
 'BCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 >>> alphabet[:-1]
@@ -145,16 +159,25 @@ Case and directionality:
 >>> # our_string[begin:end:step]
 >>> alphabet[::-1]
 'ZYXWVUTSRQPONMLKJIHGFEDCBA'
+
+def convert_sentence(sentence):
+    list_of_words = sentence.split(' ')
+   
+     for word in list_of_words:
+        new_sentence = new_sentence + convert_word(word)    # ...like this
+        new_sentence = new_sentence + " "   # but don't forget the space!
+    return new_sentence
+
 ```
 
 Formatting:
 The simplest example of formatting is string substitution:
 ```python
-# Assign values that we'll be subtitutin below
+>>> # Assign values that we'll be subtituting below
 >>> first_value = 70
 >>> second_value = 1000
-# PEP 8 recommends that we break any line that is over 79 characters in length
->>> "This is the {0}th test out of {1} tests.".format(first_value,\
+>>> # PEP 8 recommends that we break any line that is over 79 characters in length
+>>> "This is test {0} out of {1} tests.".format(first_value,\
 ... second_value)
 'This is the 70th test out of 1000 tests.'
 ```
@@ -167,16 +190,28 @@ Find:
 True
 ```
 
+Split and join:
+```
+>>> our_string = "This is an immutable string."
+>>> print our_string
+This is an immutable string.
+
+>>> our_string = our_string.split()
+>>> print our_string
+['This', 'is', 'an', 'immutable', 'string.']
+
+>>> our_string =  ' '.join(our_string)
+>>> print our_string
+This is an immutable string.
+
+```
+
 
 Find, Replace, and Len
 Formatting
 
 ## Comparisons
 
-### Boolean Operators
-    or
-    and
-    not
 
 ### Comparison Operators
     <
@@ -187,6 +222,68 @@ Formatting
     != (<> (Deprecated))
     is
     is not
+
+```
+our_int = 2
+
+if our_int > 1:
+    print("'our_int' is greater than 1.")
+
+if our_int >=  2:
+    print("'our_int' is greater than or equal to 2.")
+
+if our_int < 3:
+    print("'our_int' is less than 3.")
+
+if our_int <= 2:
+    print("'our_int' is less than or equal to 2.")
+
+if our_int == 2:
+    print("'our_int' is equal to 2.")
+
+```
+
+### Boolean Operators
+    or
+    and
+    not
+
+```
+our_int = 100
+
+if our_int > 99 and our_int < 101:
+    print("This is an example of the and operator.")
+
+if 99 < our_int < 101:
+    print("This is a shorter form of the above operation.")
+
+```
+
+Additional built-ins:
+    any
+    all
+
+```
+our_string = "This is a test 6er-ino!"
+our_rules = ["ino" in our_string,
+                    our_string == "This is a test 6er-ino!",
+                    len(our_string) > 100]
+
+print(our_rules)
+
+if any(our_rules):
+    print("Some of the rules matched.")
+
+our_rules = ["ino" in our_string,
+                    our_string == "This is a test 6er-ino!",
+                    len(our_string) > 10]
+
+print(our_rules)
+
+if all(our_rules):
+    print("All of the rules matched.")
+
+```
 
 ## Control Flow
 If-Then-Else
@@ -243,6 +340,22 @@ While loop
 ```
 
 args vs kwargs
+
+Lambda Funtions:
+
+Lambda functions are also known as anonymous functions, meaning that we can
+use a function but not assign it a name. Lambda functions can be used to
+perform simple one-line functions on the fly. This functionality was borrowed
+from Lisp. 
+```
+>>> def incrementor(n):
+...   return lambda x: x + n
+...
+>>> main_incrementor = incrementor(10)
+>>> main_incrementor(11)
+21
+
+```
 
 ## Pickling (Serializing)
 Pickle - Convert to byte stream
