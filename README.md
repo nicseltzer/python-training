@@ -74,7 +74,9 @@ Printing to standard error (stderr)
 >>> import sysprint("Printing to standard error (stderr)", file=sys.stderr)
 ```
 
-It is bad form to import _all_ the  functions in a library. This leads to issues with determining the orignating library down the road. For example, below we import all of the functions from sysv and then 
+It is bad form to import _all_ the  functions in a library. This leads to
+issues with determining the orignating library down the road. For example,
+below we import all of the functions from sys
 ```python
 
 from sys import *
@@ -117,7 +119,7 @@ underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 ```python
 >>> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 >>> integer = 0123456789
->>> float = 3.14159f
+>>> float = 3.14159
 ```python
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
