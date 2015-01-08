@@ -48,11 +48,9 @@ clause and we follow it with an action to be taken, to print to STDOUT. If
 you were to execute that code in Python, however, you would get the following:
 
 ```python
->>> if 1 == 1:
-... print("One is equal to one.")
-  File "<stdin>", line 2
-    print("One is equal to one.")
-        ^
+File "<stdin>", line 2
+  print("One is equal to one.")
+      ^
 IndentationError: expected an indented block
 
 ```
