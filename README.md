@@ -8,7 +8,7 @@ The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
-Complex is better than complicated.
+Complex is better than complicated.
 Flat is better than nested.
 Sparse is better than dense.
 Readability counts.
@@ -511,3 +511,10 @@ Using the script, we can illustrate the basics of Python's debugger (pdb).
     (a)rgs - Lists the args currently being passed
     (run) - Restart the app / script from the beginning with any args as args
     (q)uit - Quit
+
+
+Todo:
+
+  Include the importance of whitespace
+  Add some paralells to Java (dict to hashmap, list to array, etc.)
+  
