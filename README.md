@@ -515,6 +515,6 @@ Using the script, we can illustrate the basics of Python's debugger (pdb).
 
 Todo:
 
-  Include the importance of whitespace
+  Include the importance of whitespace and colons
   Add some paralells to Java (dict to hashmap, list to array, etc.)
-  
+  Incrementing and decrementing integers
