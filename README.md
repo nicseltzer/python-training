@@ -30,7 +30,7 @@ Topics:
 Unordered list of topic titles
 
 ## Basics
-###Whitespace:
+### Whitespace:
 If you are coming from another programming lanaguage, the next directive may
 strike you as a little odd, but it's imperitive to learning Python:
 
@@ -38,8 +38,8 @@ strike you as a little odd, but it's imperitive to learning Python:
 
 Consider the following code block:
 ```python
-if 1 == 1: # Which it almost always will...
-print("One is equal to one.")
+>>> if 1 == 1: # Which it almost always will...
+... print("One is equal to one.")
 
 ```
 
