@@ -37,7 +37,7 @@ strike you as a little odd, but it's imperitive to learning Python:
     Whitespace is everything!
 
 Consider the following code block:
-```
+```python
 if 1 == 1: # Which it almost always will...
 print("One is equal to one.")
 
@@ -46,8 +46,8 @@ print("One is equal to one.")
 On the surface, it appears to be coherent code. We have a conditional if
 clause and we follow it with an action to be taken, to print to STDOUT. If
 you were to execute that code in Python, however, you would get the following:
-```
 
+```python
 >>> if 1 == 1:
 ... print("One is equal to one.")
   File "<stdin>", line 2
@@ -57,7 +57,17 @@ IndentationError: expected an indented block
 
 ```
 
-For this reason, it's recommended that when you're coding in Python, you set
+The correct syntax for this example would be:
+```python
+>>> if 1 == 1:
+...     print("One is equal to one.")
+...
+One is equal to one.
+```
+
+
+
+It's recommended that when you're coding in Python, you set
 a default tab size in spaces. Personally, I set my tab to be interpreted as
 four spaces. The current standard for Python styling (PEP 8) recommends that
 a mixture of tabs and spaces be disallowed. This is enforcable by using the
@@ -340,9 +350,9 @@ If-Then-Else
         Yield
 
 ## Collections
-    Lists
+    Lists / Arrays
         list()
-    Dicts
+    Dicts / Hashmaps
     Sets
     Tuples
 
