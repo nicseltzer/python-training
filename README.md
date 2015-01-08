@@ -30,7 +30,40 @@ Topics:
 Unordered list of topic titles
 
 ## Basics
-Comments:
+###Whitespace:
+If you are coming from another programming lanaguage, the next directive may
+strike you as a little odd, but it's imperitive to learning Python:
+
+    Whitespace is everything!
+
+Consider the following code block:
+```
+if 1 == 1: # Which it almost always will...
+print("One is equal to one.")
+
+```
+
+On the surface, it appears to be coherent code. We have a conditional if
+clause and we follow it with an action to be taken, to print to STDOUT. If
+you were to execute that code in Python, however, you would get the following:
+```
+
+>>> if 1 == 1:
+... print("One is equal to one.")
+  File "<stdin>", line 2
+    print("One is equal to one.")
+        ^
+IndentationError: expected an indented block
+
+```
+
+For this reason, it's recommended that when you're coding in Python, you set
+a default tab size in spaces. Personally, I set my tab to be interpreted as
+four spaces. The current standard for Python styling (PEP 8) recommends that
+a mixture of tabs and spaces be disallowed. This is enforcable by using the
+-t and -tt CLI arguments to report warnings and errors respectively.
+
+### Comments:
 ```python
 >>> # Single line comment
 
@@ -41,13 +74,13 @@ Comments:
 ... '''
 ```
 
-Print to standard out (stdout):
+### Print to standard out (stdout):
 ```python
 # Print a line that outputs, "Hello, World."
 >>> print("Hello, World.")
 ```
 
-Importing from libraries:
+### Importing from libraries:
 ```python
 # Import the 'sys' library from The Python Standard library
 >>> import sys
@@ -85,7 +118,7 @@ input = argv[1]
 
 ```
 
-Assigning variables:
+### Assigning variables:
 ```python
 >>> '''
 ... Python is dynamically-typed language. Meaning, that a variable type doesn't
@@ -110,7 +143,7 @@ string and such.This is a string and such.This is a string and such.'
 
 ```
 
-Constants:
+### Constants:
 
 Constants in Python are stylisticly defined as being ALL UPPERCASE with 
 underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
@@ -124,7 +157,7 @@ underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
 
-Slicing a string:
+### Slicing a string:
 ```python
 >>> # Here we take the first index of a string and we slice it away from the rest
 >>> # of the string
@@ -144,7 +177,7 @@ Slicing a string:
 'ABCDEFGHIJKLMNOPQRSTUVWXY'
 ```
 
-Case and directionality:
+### Case and directionality:
 ```python
 >>> # The case of our string can be modified easily using built-ins
 >>> our_title = "an example of a title"
@@ -164,7 +197,7 @@ Case and directionality:
 
 ```
 
-Formatting:
+### Formatting:
 The simplest example of formatting is string substitution:
 ```python
 >>> # Assign values that we'll be subtituting below
@@ -178,13 +211,13 @@ The simplest example of formatting is string substitution:
 
 Furthermore, we can search through a string to find information we need:
 
-Find:
+### Find:
 ```python
 >>> 'Test' in 'Testing'
 True
 ```
 
-Split and join:
+### Split and join:
 ```python
 >>> our_string = "This is an immutable string."
 >>> print(our_string)
@@ -199,10 +232,6 @@ This is an immutable string.
 This is an immutable string.
 
 ```
-
-
-Find, Replace, and Len
-Formatting
 
 ## Comparisons
 
@@ -262,7 +291,7 @@ This is an abbreviation of the above operation.
 
 ```
 
-Additional built-ins:
+### Additional built-ins:
     any
     all
 
@@ -295,12 +324,12 @@ All of the rules matched.
 ## Control Flow
 If-Then-Else
 
-For Loop
+### For Loop
     Break
     Continue
     Pass
 
-Iterators
+### Iterators
     Enumerate
     itertools
             itertools.permutations
@@ -333,8 +362,8 @@ While loop
 ```
 
 ## Classes and Functions
+### Docstrings
 ```python
->>> # Docstrings
 >>> """
 ... This is an example of a doc string. This commonly contains information about
 ... the class, function or top-level delcaration
@@ -346,9 +375,9 @@ While loop
 
 ```
 
-args vs kwargs
+### args vs kwargs
 
-Lambda Funtions:
+### Lambda Funtions:
 
 Lambda functions are also known as anonymous functions, meaning that we can
 use a function but not assign it a name. Lambda functions can be used to
@@ -365,7 +394,7 @@ from Lisp.
 ```
 
 ## Pickling (Serializing)
-Pickle - Convert to byte stream
+### Pickle - Convert to byte stream
 ```python
 #!/usr/bin/python
 import pickle
@@ -388,7 +417,8 @@ pickle.dump(data2, file_buff, -1)
 file_buff.close()
 
 ```
-Unpickle - Inverse of pickle
+
+### Unpickle - Inverse operation of "pickle"
 ```python
 #!/usr/bin/python
 
@@ -417,7 +447,7 @@ memory intensive for a large number of imports across all modules
 
 
 
-## Parsers
+### Parsers
 
     JSON
     XML
@@ -426,7 +456,7 @@ memory intensive for a large number of imports across all modules
 
 
 ## Exceptions
-Try-Catch-Finally:
+### Try-Catch-Finally:
 ```python
 >>> def ourFunction():
 ...     try:
@@ -440,18 +470,18 @@ Try-Catch-Finally:
 ```
 
 
-Exception
+### Exception
     raise
 
 ## Testing
 
-Unit Testing:
+### Unit Testing:
 pyunit
 ```python
 
 ```
 
-Assertions:
+### Assertions:
 ```python
 >>> class MyClass(object):
 ...     '''
@@ -467,7 +497,7 @@ Assertions will produce an error assuming that the python application isn't
 run with the -O (optimization) argument.
 
 ## Debugging
-The python debugger (pdb)
+### PDB - The Python Debugger
 
 Create the following python script:
 ```python
