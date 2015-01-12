@@ -348,9 +348,7 @@ If-Then-Else
         Yield
 
 ## Collections
-    Lists / Arrays
-        list()
-
+###Lists (aka "Arrays")
 ```python
 >>> our_list = ["This", "is", "an", "example", "example", "list", "."]
 >>> our_string = "BANANA"
@@ -359,8 +357,7 @@ If-Then-Else
 ['B', 'A', 'N', 'A', 'N', 'A']
 >>>
 ```
-    Dictionaries (known in Java as "hashmaps" and in PHP as associative 
-    arrays
+### Dictionaries (aka "hashmaps" and "associative arrays")
 ```python
 >>> our_dict = {1: 'value_one', 'a': "value_fish"}
 >>> our_dict['a']
