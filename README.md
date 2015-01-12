@@ -363,17 +363,15 @@ If-Then-Else
 >>> our_dict['a']
 'value_fish'
 ```
-    Sets
-    Tuples
-
-    set() - Reduces all non-unique items from a collection of items. Order
-    is not maintained in a set.
+### Sets
 ```python
 >>> our_list = ["This", "is", "an", "example", "example", "list", "."]
 >>> set(our_list)
 set(['This', 'is', 'list', '.', 'an', 'example'])
 >>>
 ```
+    Tuples
+
 
     zip()
 
