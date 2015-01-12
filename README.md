@@ -211,9 +211,9 @@ The simplest example of formatting is string substitution:
 >>> # Assign values that we'll be subtituting below
 >>> first_value = 70
 >>> second_value = 1000
->>> # PEP 8 recommends that we break any line that is over 79 characters in length
->>> "This is test {0} out of {1} tests.".format(first_value,\
-... second_value)
+>>> # PEP 8 recommends that we break any line that is over 79 characters in 
+>>> # length
+>>> "This is test {0} out of {1} tests.".format(first_value, second_value)
 'This is the 70th test out of 1000 tests.'
 ```
 
@@ -250,7 +250,7 @@ This is an immutable string.
     >
     >=
     ==
-    != (<> (Deprecated))
+    != (<> (Deprecated as of 2.7 and removed in 3.0))
     is
     is not
 
@@ -300,8 +300,8 @@ This is an abbreviation of the above operation.
 ```
 
 ### Additional built-ins:
-    any
-    all
+    any()
+    all()
 
 ```python
 >>> our_string = "This is a test 6er-ino!"
@@ -350,12 +350,42 @@ If-Then-Else
 ## Collections
     Lists / Arrays
         list()
-    Dicts / Hashmaps
+
+```python
+>>> our_list = ["This", "is", "an", "example", "example", "list", "."]
+>>> our_string = "BANANA"
+>>> our_converted_list = list(our_string)
+>>> print(our_converted_list)
+['B', 'A', 'N', 'A', 'N', 'A']
+>>>
+```
+    Dictionaries (known in Java as "hashmaps" and in PHP as associative 
+    arrays
+```python
+>>> our_dict = {1: 'value_one', 'a': "value_fish"}
+>>> our_dict['a']
+'value_fish'
+```
     Sets
     Tuples
 
-    map() / zip()
-    set()
+    set() - Reduces all non-unique items from a collection of items. Order
+    is not maintained in a set.
+```python
+>>> our_list = ["This", "is", "an", "example", "example", "list", "."]
+>>> set(our_list)
+set(['This', 'is', 'list', '.', 'an', 'example'])
+>>>
+```
+
+    zip()
+
+    map(operation, iterator) - Applies an operation to every iterable in
+    /iterator/.
+    filter(operation, iterator;) - Filters each iteraable in a iterator for which the filtering
+    function returns True.
+    reduce() - Applies a function or operation across all iterables in an
+    iterator and returns a single output.
 
 
 
@@ -552,7 +582,5 @@ Using the script, we can illustrate the basics of Python's debugger (pdb).
 
 
 Todo:
-
-  Include the importance of whitespace and colons
   Add some paralells to Java (dict to hashmap, list to array, etc.)
   Incrementing and decrementing integers
