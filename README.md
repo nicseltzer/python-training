@@ -8,7 +8,7 @@ The Zen of Python, by Tim Peters
 Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
-Complex is better than complicated.
+Complex is better than complicated.
 Flat is better than nested.
 Sparse is better than dense.
 Readability counts.
@@ -164,6 +164,7 @@ underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 ```python
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
+```
 
 ### Slicing a string:
 ```python
@@ -370,7 +371,8 @@ If-Then-Else
 set(['This', 'is', 'list', '.', 'an', 'example'])
 >>>
 ```
-    Tuples
+
+### Tuples
 
 
     zip()
