@@ -114,6 +114,8 @@ input = argv[1]
 
 ```
 
+### Writing to standard error (stderr)
+
 ```python
 # Import the 'sys' library from The Python Standard library
 >>> import sys
