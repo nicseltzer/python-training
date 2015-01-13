@@ -168,13 +168,10 @@ string and such.This is a string and such.This is a string and such.'
 Constants in Python are stylisticly defined as being ALL UPPERCASE with 
 underscores separating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 ```python
-
-BUFFER_MAX = 0x000040
-
-def get_current_buffer_track(self):
-    pass
-
-
+>>> BUFFER_MAX = 0x000040
+>>>
+>>> def get_current_buffer_track(self):
+...     pass
 ```
 
 ## Strings and Numbers
