@@ -82,7 +82,7 @@ a mixture of tabs and spaces be disallowed. This is enforcable by using the
 ... '''
 ```
 
-### Print to standard out (stdout):
+### Print to STDOUT:
 ```python
 # Print a line that outputs, "Hello, World."
 >>> print("Hello, World.")
@@ -115,7 +115,7 @@ input = argv[1]
 
 ```
 
-### Writing to standard error (stderr)
+### Writing to STDERR:
 
 ```python
 # Import the 'sys' library from The Python Standard library
