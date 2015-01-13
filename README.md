@@ -94,13 +94,10 @@ common two ways are "import" and "from-import":
 ```python
 >>> # An exmaple of an "import" statement
 ... import sys
->>>
 >>> our_input = sys.argv[1] # assign the first argument from user input
->>>
 >>>
 >>> # An example of a "from-import" statement
 ... from sys import argv
->>>
 >>> our_input = argv[1] # assign the first argument from user input
 >>>
 ```
