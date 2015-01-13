@@ -105,7 +105,8 @@ our_input = argv[1] # assign the first argument from user input
 ```
 
 It is bad form to import all functions in a library with a "from-import"
-statement. For example, below we import everything from "sys".
+statement. If you're going to import all of the functionality from a library,
+it's recommended you follow the traditional "import" statement syntax.
 ```python
 
 from sys import *
