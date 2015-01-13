@@ -89,6 +89,31 @@ a mixture of tabs and spaces be disallowed. This is enforcable by using the
 ```
 
 ### Importing from libraries:
+When importing libraries, there are several ways to go about it. The most
+common two ways are "import" and "from-import":
+```python
+# An exmaple of an "import" statement
+import sys
+
+our_input = sys.argv[1] # assign the first argument from user input
+
+
+# An example of a "from-import" statement
+from sys import argv
+
+our_input = argv[1] # assign the first argument from user input
+```
+
+It is bad form to import all functions in a library with a "from-import"
+statement. For example, below we import everything from "sys".
+```python
+
+from sys import *
+
+input = argv[1]
+
+```
+
 ```python
 # Import the 'sys' library from The Python Standard library
 >>> import sys
@@ -115,16 +140,6 @@ Printing to standard error (stderr)
 >>> import sysprint("Printing to standard error (stderr)", file=sys.stderr)
 ```
 
-It is bad form to import _all_ the  functions in a library. This leads to
-issues with determining the orignating library down the road. For example,
-below we import all of the functions from sys
-```python
-
-from sys import *
-
-input = argv[1]
-
-```
 
 ### Assigning variables:
 ```python
@@ -154,11 +169,20 @@ string and such.This is a string and such.This is a string and such.'
 ### Constants:
 
 Constants in Python are stylisticly defined as being ALL UPPERCASE with 
-underscores seperating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
+underscores separating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
+```python
+
+BUFFER_MAX = 0x000040
+
+def get_current_buffer_track(self):
+    pass
+
+
+```
 
 ## Strings and Numbers
 ```python
->>> alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+>>> alphabet = "ABCDEFGHI JKLMNOPQRSTUVWXYZ"
 >>> integer = 0123456789
 >>> float = 3.14159
 ```python
@@ -373,6 +397,8 @@ set(['This', 'is', 'list', '.', 'an', 'example'])
 ```
 
 ### Tuples
+On the surface, a tuple is very similar to a list. The main difference between
+the two is that a tuple is immutable.
 
 
     zip()
@@ -541,7 +567,7 @@ Create the following python script:
 import pdb
 
 '''
-Example script to show the the basal functionality of the python debugger
+Example script to show the the base functionality of the python debugger
 (pdb)
 '''
 
