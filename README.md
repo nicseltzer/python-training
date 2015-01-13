@@ -92,30 +92,29 @@ a mixture of tabs and spaces be disallowed. This is enforcable by using the
 When importing libraries, there are several ways to go about it. The most
 common two ways are "import" and "from-import":
 ```python
-# An exmaple of an "import" statement
-import sys
-
-our_input = sys.argv[1] # assign the first argument from user input
-
-
-# An example of a "from-import" statement
-from sys import argv
-
-our_input = argv[1] # assign the first argument from user input
+>>> # An exmaple of an "import" statement
+... import sys
+>>>
+>>> our_input = sys.argv[1] # assign the first argument from user input
+>>>
+>>>
+>>> # An example of a "from-import" statement
+... from sys import argv
+>>>
+>>> our_input = argv[1] # assign the first argument from user input
+>>>
 ```
 
 It is bad form to import all functions in a library with a "from-import"
 statement. If you're going to import all of the functionality from a library,
 it's recommended you follow the traditional "import" statement syntax.
 ```python
-
-from sys import *
-
-input = argv[1]
-
+>>> from sys import *
+>>> our_input = argv[1]
+>>>
 ```
 
-### Writing to STDERR:
+### Print to STDERR:
 
 ```python
 # Import the 'sys' library from The Python Standard library
