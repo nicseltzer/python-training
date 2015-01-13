@@ -99,7 +99,6 @@ common two ways are "import" and "from-import":
 >>> # An example of a "from-import" statement
 ... from sys import argv
 >>> our_input = argv[1] # assign the first argument from user input
->>>
 ```
 
 It is bad form to import all functions in a library with a "from-import"
@@ -108,7 +107,6 @@ it's recommended you follow the traditional "import" statement syntax.
 ```python
 >>> from sys import *
 >>> our_input = argv[1]
->>>
 ```
 
 ### Print to STDERR:
