@@ -444,7 +444,7 @@ the two is that a tuple is immutable.
 >>> enumerate(our_list)
 <enumerate object at 0x0235F760>
 >>> for i in enumerate(our_list):
-...     print i
+...     print(i)
 ...
 (0, 'This')
 (1, 'is')
@@ -455,7 +455,7 @@ the two is that a tuple is immutable.
 (6, '.')
 
 >>> for i in enumerate(our_list):
-...     print i
+...     print(i)
 ...
 0
 1
@@ -474,7 +474,7 @@ three arguments: xrange(start, end, step):
 
 ```python
 >>> for i in xrange(100, 105, 2):
-...     print i
+...     print(i)
 ...
 100
 102
@@ -483,7 +483,7 @@ three arguments: xrange(start, end, step):
 #### len()
 Returns the length of the passed object.
 ```python
->>> print len(our_list)
+>>> print(len(our_list))
 7
 
 ```
@@ -521,6 +521,15 @@ bus request processing).
 Never gonna get past 10.
 ```
 
+### While Loop
+```python
+buff = []
+message = 0x000001
+while len(buff) < 100:
+    buff.append(message)
+
+print("The buffer contains {0} items.".format(len(buff)))
+
 ### Generators
 (http://en.wikipedia.org/wiki/Generator_(computer_programming))
 
@@ -550,7 +559,7 @@ facilitates generator exhaustion by stepping through values.
 >>> for x in countUp(0):
 ...     if x <= 100000:
 ...         if isPrime(x):
-...             print x
+...             print(x)
 ...     else:
 ...         break
 ...
