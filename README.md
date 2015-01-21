@@ -154,6 +154,16 @@ Printing to standard error (stderr)
 >>> our_number * 5
 5
 
+>>> # Increment "our_number" by 1
+>>> our_number += 1
+>>> our_number
+2
+
+>>> # Decrement "our_number" by 1
+>>> our_number -= 1
+>>> our_number
+1
+
 >>> # Perform math on "our_string"
 >>> our_string * 5
 'This is a string and such.This is a string and such.This is a
