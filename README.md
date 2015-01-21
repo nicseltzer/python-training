@@ -305,13 +305,15 @@ This is an immutable string.
 ...     print("'our_int' is equal to 2.")
 ...
 'our_int' is equal to 2.
-
-# When dealing with boolean values, you can use either == or 'is'
-if our_bool is True:
-    print("'our_bool' is True.")
-
-if our_bool is not False:
-    print("'our_bool' is not False.")
+>>> # When dealing with boolean values, you can use either == or 'is'
+... if our_bool is True:
+...     print("'our_bool' is True.")
+...
+'our_bool' is True.
+>>> if our_bool is not False:
+...     print("'our_bool' is not False.")
+...
+'our_bool' is not False.
 
 ```
 
