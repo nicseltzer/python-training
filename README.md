@@ -845,8 +845,3 @@ Using the script, we can illustrate the basics of Python's debugger (pdb).
     (a)rgs - Lists the args currently being passed
     (run) - Restart the app / script from the beginning with any args as args
     (q)uit - Quit
-
-
-Todo:
-  Add some paralells to Java (dict to hashmap, list to array, etc.)
-  Incrementing and decrementing integers
