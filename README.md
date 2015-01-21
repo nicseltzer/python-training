@@ -507,7 +507,7 @@ Never gonna get past 10.
 ### Generators
 (http://en.wikipedia.org/wiki/Generator_(computer_programming))
 
-Generators are a form of iterator which allow us to deal with unwieldy data-
+Generators are a form of iterator which allow us to deal with unwieldy data 
 sets. A generator is comparable to a function in that it takes in arguments,
 can be called, and can return values. The memory foot print of a generator is
 much smaller than that of a function returning a large list of items. Yield
