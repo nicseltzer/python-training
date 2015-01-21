@@ -320,19 +320,24 @@ This is an immutable string.
 ### Boolean Operators
     or
     and
-    not
 
 ```python
 >>> our_int = 100
 >>>
 >>> if our_int > 99 and our_int < 101:
-...     print("This is an example of the and operator.")
+...     print("This is an example of the 'and' operator.")
 ...
-This is an example of the and operator.
+This is an example of the 'and' operator.
 >>> if 99 < our_int < 101:
 ...     print("This is an abbreviation of the above operation.")
 ...
 This is an abbreviation of the above operation.
+>>>
+>>> if our_int < 99 or our_int < 101:
+...     print("This is an example of the 'or' operator.")
+...
+This is an example of the 'or' operator.
+
 
 ```
 
