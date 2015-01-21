@@ -182,27 +182,6 @@ Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
 ```
 
-### Slicing:
-```python
->>> # Here we take the first index of a string and we slice it away from the rest
->>> # of the string
->>> alphabet[0]
-'A'
-
->>> # We can do the same thing for the right side of the string by using
->>> # negative integers (i.e.: -3, -53, etc.)
->>> alphabet[-1]
-'Z'
-
->>> 
->>> alphabet[1:]
-'BCDEFGHIJKLMNOPQRSTUVWXYZ'
-
->>> alphabet[:-1]
-'ABCDEFGHIJKLMNOPQRSTUVWXY'
-```
-Note: Slicing applies not only to strings, but to lists as well!
-
 ### Case and directionality:
 ```python
 >>> # The case of our string can be modified easily using built-ins
@@ -252,6 +231,27 @@ True
 15
 
 ```
+### Slicing:
+```python
+>>> # Here we take the first index of a string and we slice it away from the rest
+>>> # of the string
+>>> alphabet[0]
+'A'
+
+>>> # We can do the same thing for the right side of the string by using
+>>> # negative integers (i.e.: -3, -53, etc.)
+>>> alphabet[-1]
+'Z'
+
+>>> 
+>>> alphabet[1:]
+'BCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+>>> alphabet[:-1]
+'ABCDEFGHIJKLMNOPQRSTUVWXY'
+
+```
+Note: Slicing applies not only to strings, but to lists as well!
 
 ### Split and join:
 ```python
