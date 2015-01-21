@@ -687,15 +687,76 @@ __init__.py for imports and enforcing order for universal packages
 memory intensive for a large number of imports across all modules
 
 ## JSON and XML and YAML
-
+/with a spot of soup/
 
 
 ### Parsers
 
     JSON
+```python
+import json
+
+json_data = {
+                "f57rwcw":
+                    {
+                        "title": "Architect",
+                        "dept": "GTA"
+                    },
+                "jpgraves":
+                    {
+                        "title": "Architect",
+                        "dept": "GTA"
+                    }
+            }
+
+```
     XML
+```python
+from xml.dom import minidom
+
+xml_data = '''
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
+'''
+
+```
     YAML
-    BeautifulSoup - HTML
+```python
+import yaml
+
+yaml_data = '''
+---
+# A list of tasty fruits
+- Apple
+- Orange
+- Strawberry
+- Mango
+'''
+
+```
+    BeautifulSoup
+
+```python
+from bs4 import BeautifulSoup
+
+html_date = '''
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+'''
+
+```
 
 
 ## Exceptions
