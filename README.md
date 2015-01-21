@@ -338,7 +338,6 @@ This is an abbreviation of the above operation.
 ...
 This is an example of the 'or' operator.
 
-
 ```
 
 ### Additional built-ins:
@@ -386,20 +385,6 @@ All of the rules matched.
 ...
 'Statement output.'
 
-### For Loop
-    Break
-    Continue
-    Pass
-
-### Iterators
-    Enumerate
-    itertools
-            itertools.permutations
-    range() (xrange() (Deprecated in 3.x+))
-    len()
-    Generators
-        Controlling generator exhaustion
-        Yield
 
 ## Collections
 ###Lists (aka "arrays")
@@ -440,10 +425,127 @@ the two is that a tuple is immutable.
     iterator and returns a single output.
 
 
+### Iterators
+#### Enumerate
+```python
+>>> our_list
+['This', 'is', 'an', 'example', 'example', 'list', '.']
+>>> enumerate(our_list)
+<enumerate object at 0x0235F760>
+>>> for i in enumerate(our_list):
+...     print i
+...
+(0, 'This')
+(1, 'is')
+(2, 'an')
+(3, 'example')
+(4, 'example')
+(5, 'list')
+(6, '.')
+
+>>> for i in enumerate(our_list):
+...     print i
+...
+0
+1
+2
+3
+4
+5
+6
+```
+
+#### range() (xrange() (Deprecated in 3.x+))
+```python
+>>> for i in xrange(100, 105, 2):
+...     print i
+...
+100
+102
+104
+```
+#### len()
+```python
+>>> print len(our_list)
+7
+```
 
 ## Loops
-For loop
-While loop
+### For Loop
+>>> for i in xrange(0, 12):
+...     if i >= 0 and i < 10:
+...         print(i)
+...         continue # Jumps to the next iteration of the loop
+...     elif i >= 10:
+...         print(i)
+...         print("Never gonna get past 10.")
+...         break # Terminates the loop
+...     else:
+...         pass # Does nothing
+...
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Never gonna get past 10.
+
+    Generators
+        Controlling generator exhaustion
+        Yield
+
+### Generators
+Generators are a form of iterator which allow us to deal with unwieldy data-
+sets. A generator is comparable to a function in that it takes in arguments,
+can be called, and can return values. The memory foot print of a generator is
+much smaller than that of a function returning a large list of items.
+
+>>> def isPrime(n):
+...         n = abs(int(n))
+...         if n % 2 == 0 and n > 2:
+...                 return False
+...         elif n < 2:
+...                 return False
+...         for i in range(3, int(math.sqrt(n))+1, 2):
+...                 if n % i == 0:
+...                         return False
+...         return n
+...
+>>> def countUp(n):
+...     while True:
+...         yield n
+...         n += 1
+...
+>>> for x in countUp(0):
+...     if x <= 100000:
+...         if isPrime(x):
+...             print x
+...     else:
+...         break
+...
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+31
+37
+41
+43
+47
+# SNIP #
+```
 
 ## Files
 ```python
