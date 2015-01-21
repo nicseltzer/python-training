@@ -481,12 +481,19 @@ three arguments: xrange(start, end, step):
 104
 ```
 #### len()
+Returns the length of the passed object.
 ```python
 >>> print len(our_list)
 7
+
 ```
 
 ## Loops
+There are two main loop types in python: for loops and while loops. For loops
+are best used for a finite sized collections (e.g.: a list of items) whereas 
+while loops are best used for processing ambiguous data sets (e.g.: message 
+bus request processing).
+
 ### For Loop
 ```python
 >>> for i in xrange(0, 12):
