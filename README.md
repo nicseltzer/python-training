@@ -498,15 +498,12 @@ the two is that a tuple is immutable.
 Never gonna get past 10.
 ```
 
-    Generators
-        Controlling generator exhaustion
-        Yield
-
 ### Generators
 Generators are a form of iterator which allow us to deal with unwieldy data-
 sets. A generator is comparable to a function in that it takes in arguments,
 can be called, and can return values. The memory foot print of a generator is
-much smaller than that of a function returning a large list of items.
+much smaller than that of a function returning a large list of items. Yield
+facilitates generator exhaustion by stepping through values. 
 
 ```python
 >>> def isPrime(n):
@@ -547,12 +544,29 @@ much smaller than that of a function returning a large list of items.
 41
 43
 47
-# SNIP #
+# ...SNIP... #
 ```
 
 ## Files
 ```python
->>> with open(sys.argv[1]) as input_file
+>>> with open('test.txt') as input_file
+...     for i in input_file:
+...         print(i)
+
+```
+
+In the following example, we are opening a file for "binary writing" in the 
+current working directory with the "filename.txt" file. 
+
+```python
+with open(
+            os.path.join(
+                os.path.abspath(
+                    os.path.dirname(__file__)
+                    ), "filename.txt"
+                ), "wb"
+            ) as input_file:
+            input_file.write(json.dumps(some_json_data)
 
 ```
 
