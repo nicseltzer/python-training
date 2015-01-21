@@ -456,6 +456,11 @@ the two is that a tuple is immutable.
 ```
 
 #### range() (xrange() (Deprecated in 3.x+))
+Here we use the xrange() function. This built-in is the preferred method of
+listing a range in Python 2.X. In fact, in Python 3.X, range() has been
+replaced by xrange() and xrange() is deprecated. The xrange() function takes
+three arguments: xrange(start, end, step):
+
 ```python
 >>> for i in xrange(100, 105, 2):
 ...     print i
