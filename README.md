@@ -367,7 +367,19 @@ All of the rules matched.
 ```
 
 ## Control Flow
-If-Then-Else
+```python
+>>> condition = True
+>>> another_condition = False
+>>> statement = "Statement output."
+>>>
+>>> if condition:
+...     statement
+... elif another_condition:
+...     statement
+... else: # catch all
+...     statement
+...
+'Statement output.'
 
 ### For Loop
     Break
@@ -385,7 +397,7 @@ If-Then-Else
         Yield
 
 ## Collections
-###Lists (aka "Arrays")
+###Lists (aka "arrays")
 ```python
 >>> our_list = ["This", "is", "an", "example", "example", "list", "."]
 >>> our_string = "BANANA"
