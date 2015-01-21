@@ -182,7 +182,7 @@ Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
 ```
 
-### Slicing a string:
+### Slicing:
 ```python
 >>> # Here we take the first index of a string and we slice it away from the rest
 >>> # of the string
@@ -201,6 +201,7 @@ variety of methods:
 >>> alphabet[:-1]
 'ABCDEFGHIJKLMNOPQRSTUVWXY'
 ```
+Note: Slicing applies not only to strings, but to lists as well!
 
 ### Case and directionality:
 ```python
@@ -505,6 +506,7 @@ Never gonna get past 10.
 
 ### Generators
 (http://en.wikipedia.org/wiki/Generator_(computer_programming))
+
 Generators are a form of iterator which allow us to deal with unwieldy data-
 sets. A generator is comparable to a function in that it takes in arguments,
 can be called, and can return values. The memory foot print of a generator is
