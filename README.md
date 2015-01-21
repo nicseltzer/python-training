@@ -63,8 +63,6 @@ The correct syntax for this example would be:
 One is equal to one.
 ```
 
-
-
 It's recommended that when you're coding in Python, you set
 a default tab size in spaces. Personally, I set my tab to be interpreted as
 four spaces. The current standard for Python styling (PEP 8) recommends that
@@ -240,8 +238,18 @@ Furthermore, we can search through a string to find information we need:
 
 ### Find:
 ```python
+>>> # Testing for content in a string; pythonic, simple
+...
 >>> 'Test' in 'Testing'
 True
+
+>>> our_string = "Example string called 'our_string'."
+>>> find_string = "calle"
+>>> print(our_string.find(find_string, 0, len(our_string)))
+15
+>>> print(our_string.find(find_string)) # simplified, /beg/ and /end/ are optional
+15
+
 ```
 
 ### Split and join:
@@ -275,6 +283,7 @@ This is an immutable string.
 
 ```python
 >>> our_int = 2
+>>> our_bool = True
 >>>
 >>> if our_int > 1:
 ...     print("'our_int' is greater than 1.")
@@ -296,6 +305,13 @@ This is an immutable string.
 ...     print("'our_int' is equal to 2.")
 ...
 'our_int' is equal to 2.
+
+# When dealing with boolean values, you can use either == or 'is'
+if our_bool is True:
+    print("'our_bool' is True.")
+
+if our_bool is not False:
+    print("'our_bool' is not False.")
 
 ```
 
