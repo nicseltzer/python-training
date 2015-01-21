@@ -472,6 +472,7 @@ the two is that a tuple is immutable.
 
 ## Loops
 ### For Loop
+```python
 >>> for i in xrange(0, 12):
 ...     if i >= 0 and i < 10:
 ...         print(i)
@@ -495,6 +496,7 @@ the two is that a tuple is immutable.
 9
 10
 Never gonna get past 10.
+```
 
     Generators
         Controlling generator exhaustion
@@ -506,6 +508,7 @@ sets. A generator is comparable to a function in that it takes in arguments,
 can be called, and can return values. The memory foot print of a generator is
 much smaller than that of a function returning a large list of items.
 
+```python
 >>> def isPrime(n):
 ...         n = abs(int(n))
 ...         if n % 2 == 0 and n > 2:
