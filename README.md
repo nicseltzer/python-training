@@ -27,7 +27,21 @@ Namespaces are one honking great idea -- let's do more of those!
 ```
 
 Topics:
-Unordered list of topic titles
+* Basics
+* Strings and Numbers
+* Comparisons
+* Control Flow
+* Collections
+* Iterators
+* Loops
+* Files
+* Classes and Functions
+* Pickling (Serializing)
+* Exceptions
+* Testing
+* Debugging
+
+
 
 ## Basics
 ### Whitespace:
