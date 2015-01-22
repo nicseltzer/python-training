@@ -619,7 +619,7 @@ with open(
 
 ```
 
-### '*args' vs '**kwargs'?
+### '**args' vs '***kwargs'?
 '*args' and '**kwargs' are a special type of function argument. These
 arguments allow any number of variables to be passed in to the function. Let's
 start with "*args":
