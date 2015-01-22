@@ -747,7 +747,9 @@ file_buff.close()
 
 ```
 
-cPickle - 1000x faster than pickle
+cPickle is an alternative to pickle. cPickle is approx. 1000x faster than
+pickle. The largest issue is that since it is a purely C implementation of
+the pickle library so there is no way to extend it natively in Python.
 
 
 ## Exceptions
@@ -766,11 +768,6 @@ cPickle - 1000x faster than pickle
 
 ## Testing
 
-### Unit Testing:
-pyunit
-```python
-
-```
 
 ### Assertions:
 ```python
