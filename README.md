@@ -589,8 +589,9 @@ facilitates generator exhaustion by stepping through values.
 
 ```
 
-In the following example, we are opening a file for "binary writing" in the 
-current working directory with the "filename.txt" file. 
+In the following example, we are opening a file for "binary writing" in the
+current working directory with the "filename.txt" file. The last line writes
+a piece of JSON data out to the "input_file".
 
 ```python
 with open(
@@ -618,7 +619,42 @@ with open(
 
 ```
 
-### args vs kwargs
+### *args vs **kwargs?
+"*args" and "**kwargs" are a special type of function argument. These
+arguments allow any number of variables to be passed in to the function. Let's
+start with "*args":
+```python
+>>> def the_printer(*args):
+...     for i in args:
+...             print(i)
+...
+>>>
+>>> the_printer(1, 2, 3, 4, 5, 6)
+1
+2
+3
+4
+5
+6
+
+```
+
+We don't specify the number of arguements up front. This can be helpful in
+parsing a larger list of items without first knowing the number of items to
+be passed up front. The last special argument is "**kwargs":
+
+```python
+>>> def parse_those_options(**kwargs):
+...     print kwargs
+...
+>>>
+>>> parse_those_options(start=10, end=100, dir='C:\\300\\impossible')
+{'start': 10, 'end': 100, 'dir': 'C:\\300\\impossible'}
+
+```
+
+The names are only by convention. You could juts as easily have "*stuff" and
+"**stuff" as names.
 
 ### Lambda Funtions:
 
@@ -743,7 +779,7 @@ yaml_data = '''
 ```python
 from bs4 import BeautifulSoup
 
-html_date = '''
+html_data = '''
 <!DOCTYPE html>
 <html>
 <body>
