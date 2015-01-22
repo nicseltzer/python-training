@@ -606,6 +606,36 @@ with open(
 ```
 
 ## Classes and Functions
+
+### Classes
+
+A common structure in OO programming. There are two main types of operations
+performed against Python classes: instantiation and object reference:
+
+class MyClass(object):
+    def __init__(self):
+        pass
+        
+    thing_list = []
+    @classmethod
+    def print_class_things(self):
+        print self.thing_list
+    @classmethod
+    def write_class_things(self, *things):
+        for i in things:
+            self.thing_list.append(i)
+
+testing = MyClass()
+testing.print_class_things()
+testing.write_class_things('thing_one', 'thing_two')
+testing.print_class_things()
+
+MyClass.print_class_things()
+MyClass.write_class_things('thing_one', 'thing_two')
+MyClass.print_class_things()
+
+
+
 ### Docstrings
 ```python
 >>> """
