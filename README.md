@@ -812,7 +812,7 @@ should be 2 when we hard-code it to be
     assert my_number == 2
 
 
-if __name__ == '__main__':
+if __name__ == '__main__': # A conditional which doesn't run on import.
     pdb.set_trace() # breakpoint
     setMyNumber()
 
