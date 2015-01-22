@@ -619,8 +619,8 @@ with open(
 
 ```
 
-### '**args' vs '***kwargs'?
-'*args' and '**kwargs' are a special type of function argument. These
+### 'args' vs 'kwargs'?
+"args" and "kwargs" are a special type of function argument. These
 arguments allow any number of variables to be passed in to the function. Let's
 start with "*args":
 ```python
@@ -651,10 +651,12 @@ be passed up front. The last special argument is "**kwargs":
 >>> parse_those_options(start=10, end=100, dir='C:\\300\\impossible')
 {'start': 10, 'end': 100, 'dir': 'C:\\300\\impossible'}
 
+
+# The names are only by convention. You could juts as easily have *stuff and
+# **stuff as names.
+
 ```
 
-The names are only by convention. You could juts as easily have "*stuff" and
-"**stuff" as names.
 
 ### Lambda Funtions:
 
