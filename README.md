@@ -547,6 +547,7 @@ while len(buff) < 100:
     buff.append(message)
 
 print("The buffer contains {0} items.".format(len(buff)))
+```
 
 ### Generators
 (http://en.wikipedia.org/wiki/Generator_(computer_programming))
