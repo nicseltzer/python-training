@@ -197,10 +197,13 @@ underscores separating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 ```
 
 ## Strings and Numbers
+
 ```python
 >>> alphabet = "ABCDEFGHI JKLMNOPQRSTUVWXYZ"
 >>> integer = 0123456789
 >>> float = 3.14159
+```
+
 ```python
 Strings, in python, are immutable. To interact with strings, we can use a
 variety of methods:
