@@ -714,7 +714,7 @@ Lambda functions are also known as anonymous functions, meaning that we can
 use a function but not assign it a name. Lambda functions can be used to
 perform simple one-line functions on the fly. This functionality was borrowed
 from Lisp. 
-```
+```python
 >>> def incrementor(n):
 ...   return lambda x: x + n
 ...
