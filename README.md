@@ -631,7 +631,7 @@ with open(
 A common structure in OO programming. There are two main types of operations
 performed against Python classes: instantiation and object reference:
 
-```
+```python
 class MyClass(object):
     def __init__(self):
         pass
