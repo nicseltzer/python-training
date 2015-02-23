@@ -523,11 +523,7 @@ bus request processing).
 ...         print("Never gonna get past 10.")
 ...         break # Terminates the loop
 ...     else:
-<<<<<<< HEAD
 ...         pass # Does literally nothing; used as a placeholder when no code is to be executed
-=======
-...         pass # Does nothing
->>>>>>> origin/master
 ...
 0
 1
