@@ -200,7 +200,7 @@ underscores separating multiple words. (e.g.: BUFFER_MIN, ACK_FLAG_SIZE)
 
 ```python
 >>> alphabet = "ABCDEFGHI JKLMNOPQRSTUVWXYZ"
->>> integer = 0123456789
+>>> integer = 123456789
 >>> float = 3.14159
 ```
 
